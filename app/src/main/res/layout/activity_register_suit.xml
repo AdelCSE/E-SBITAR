@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterSuitActivity">
+
+
+
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:progress="50"
+        app:trackCornerRadius="30dp"
+        android:background="#EEEEEE"
+        android:progressTint="@color/PrimaryGreen"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/registerProfilePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/add_image"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"/>
+
+    <TextView
+        android:id="@+id/ProfilePictureTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerProfilePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/PrimaryGreen"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Upload Profile Picture"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/roleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_below="@id/ProfilePictureTxt"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="Select Your Role"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/roleDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roleText"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Please choose the option that best describes you !"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roleDesc"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_doctor"
+            android:layout_width="150dp"
+            android:layout_height="112dp"
+            android:button="@null"
+            android:background="@drawable/radio_selector"
+            android:drawableTop="@drawable/ic_doctor"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@drawable/custom_radio_text"
+            android:text="Doctor" />
+
+        <RadioButton android:id="@+id/radio_patient"
+            android:layout_width="150dp"
+            android:layout_height="112dp"
+            android:drawableTop="@drawable/ic_patient"
+            android:background="@drawable/radio_selector"
+            android:layout_marginLeft="24dp"
+            android:button="@null"
+            android:textAlignment="center"
+            android:text="Patient"
+            android:textColor="@drawable/custom_radio_text"
+            android:fontFamily="@font/montserrat_semi_bold" />
+
+    </RadioGroup>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/join_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_grp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/green_button"
+        android:text="JOIN NOW"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/registrationSuitProgressBar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/join_button"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

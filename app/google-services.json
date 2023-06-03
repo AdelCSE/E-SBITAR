@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "309851955652",
+    "project_id": "e-sbitar-e26bd",
+    "storage_bucket": "e-sbitar-e26bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309851955652:android:540de977006205b1ba4491",
+        "android_client_info": {
+          "package_name": "com.example.e_sbitar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309851955652-5ecpm3nm5o3rju9jgr4liulug4mf6mjm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.e_sbitar",
+            "certificate_hash": "f8fe9219d938674417aba894ff36feedd83f4909"
+          }
+        },
+        {
+          "client_id": "309851955652-13uec36qc2tisgk36sh37mbbofig90h8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOS3L1hZYzITtsU2iz6BmeKYcDbLVK2BQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309851955652-13uec36qc2tisgk36sh37mbbofig90h8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

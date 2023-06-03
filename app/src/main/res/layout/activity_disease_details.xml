@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiseaseDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/diseaseBackBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_backbtn"
+            android:layout_marginVertical="18dp"
+            android:layout_marginStart="24dp"/>
+
+        <TextView
+            android:id="@+id/diseasePageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disease Name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/PrimaryGreen"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AppBar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/diseasePicture"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="18dp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize4Percent"/>
+
+
+            <TextView
+                android:id="@+id/descTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_below="@+id/diseasePicture"
+                android:text="Description"
+                android:textColor="@color/PrimaryGreen"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginTop="18dp"/>
+
+            <TextView
+                android:id="@+id/diseaseDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_below="@+id/descTitle"
+                android:text="desc desc desc"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserrat_medium"/>
+
+            <TextView
+                android:id="@+id/sympTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_below="@+id/diseaseDescription"
+                android:text="Symptoms"
+                android:textColor="@color/PrimaryGreen"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginTop="18dp"/>
+
+            <TextView
+                android:id="@+id/diseaseSymps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_below="@+id/sympTitle"
+                android:text=""
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserrat_medium"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
